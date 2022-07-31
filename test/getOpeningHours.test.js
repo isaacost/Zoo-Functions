@@ -40,7 +40,7 @@ describe('Testes da função getOpeningHours', () => {
   it('Verifica se retorna fechado as sextas-feiras as 09:00-PM :', () => {
     expect(getOpeningHours('Friday', '09:00-PM')).toEqual(closed);
   });
-  it('Verifica se retorna aberto as terças-feiras as 12:00-PM :', () => {
+  it('Verifica se retorna aberto as sextas-feiras as 12:00-PM :', () => {
     expect(getOpeningHours('Friday', '12:00-PM')).toEqual(open);
   });
 });
